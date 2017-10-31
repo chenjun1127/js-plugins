@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>jquery轻巧dialog弹出插件</title>
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="js/easyDialog.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/easyDialog.css">
+
+    <style>
+    	.btn { margin: 20px; display: block; width: 200px; text-align: center; }    
+    </style>
+</head>
+
+<body>
+    <button value="click" class="btn btn1">默认无参数</button>
+    <button value="click" class="btn btn2">带回调函数的alert弹出框</button>
+    <button value="click" class="btn btn3">多个按钮的alert弹出框</button>
+    <button value="click" class="btn btn4">5秒后关闭</button>
+    <button value="click" class="btn btn5">可拖拽的模态框</button>
+    <button value="click" class="btn btn6">支持iframe的可拖拽模态框</button>
+    <div class='a' style="display: none;">
+        <p>我是内容</p>
+    </div>
+    <script>
+    /*
+     ***by jone 2016-10-27
+     */
+
+    // 调用
+    $(".btn1").easyDialog()
+    $(".btn2").easyDialog({
+        width: 400,
+        msg: '带回调函数的alert弹出框',
+        buttons: ['ok'],
+        buttonClass: ['success'],
+        callback: function() {
+            alert("你点击了按钮")
+        }
+    })
+    $(".btn3").easyDialog({
+        width: 400,
+        msg: '多个按钮的alert弹出框',
+        buttons: ['确定', '取消'],
+        buttonClass: ['danger', 'default']
+    })
+    $(".btn4").easyDialog({
+        buttons: '',
+    })
+    $(".btn5").easyDialog({
+        width: 500,
+        height: 400,
+        borderRadius: 10,
+        type: 'modal',
+        title: "可拖拽的模态框",
+        content: '.a',
+        effect: 'bounceY',
+        isDrag: true
+
+    })
+    $(".btn6").easyDialog({
+        width: 800,
+        height: 600,
+        borderRadius: 10,
+        type: 'modal',
+        content: 'http://www.w3cfuns.com',
+        effect: 'bounceX',
+        isDrag: true
+    })
+    </script>
+</body>
+
+</html>

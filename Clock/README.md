@@ -6,9 +6,9 @@
 bgColor: '#fff',
 width: 300,
 height: 300,
-hColor: '#555', // 时针颜色
-mColor: 'gold', // 分针颜色
-sColor: 'orange', // 秒针颜色
+hColor: '#555',			// 时针颜色
+mColor: 'gold',			// 分针颜色
+sColor: 'orange',		// 秒针颜色
 boxShadow: 'inset 0 0 60px #999',
 cBgcolor: '#E91E63',
 ```

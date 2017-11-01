@@ -2,6 +2,7 @@
 
 个人开发的js插件
 
+* [Calendar](https://github.com/chenjun1127/js-plugins/tree/master/Calendar) jQuery Calendar 日历插件
 * [Checkin](https://github.com/chenjun1127/js-plugins/tree/master/Checkin) jQuery日历签到插件 
 * [Circle](https://github.com/chenjun1127/js-plugins/tree/master/Circle) Canvas圆环百比分进度插件
 * [Clock](https://github.com/chenjun1127/js-plugins/tree/master/Clock) 原生js实现钟表插件

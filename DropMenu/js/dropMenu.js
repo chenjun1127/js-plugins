@@ -2,7 +2,7 @@
  * @Author: chenjun
  * @Date:   2017-11-01 11:05:45
  * @Last Modified by:   chenjun
- * @Last Modified time: 2017-11-01 11:05:55
+ * @Last Modified time: 2017-11-01 17:41:11
  */
 
 (function($) {
@@ -19,7 +19,7 @@
             var wrapper = '<div class=\'wrapper\'><div class=\'space\'><i></i><em></em></div></div>';
             me.parent().append(wrapper);
             var _box = me.parent().find('.wrapper');
-            obj.dialogBox.show().appendTo(_box);
+            obj.dialogBox.appendTo(_box);
             _box.css({
                 position: 'absolute',
                 top: me.outerHeight() + 11,

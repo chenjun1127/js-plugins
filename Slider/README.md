@@ -9,7 +9,7 @@ autoPlay: true,				// 自动滚动
 sliderArrow: true,			// 滚动左右箭头
 sliderBar: true,			// 是否显示小原点
 speed: 3000,				// 滚动速度 
-effect: 'horizontal',		// 滚动效果，默认为水平，horizontal、vertical、fade
+effect: 'horizontal',			// 滚动效果，默认为水平，horizontal、vertical、fade
 responsive: false,			// 是否开启响应式
 callback: function() {},		// 回调函数
 ```

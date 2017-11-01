@@ -1,6 +1,9 @@
 /*
-	***by jone 2016-10-27
-*/
+ * @Author: chenjun
+ * @Date:   2017-10-31 18:08:50
+ * @Last Modified by:   chenjun
+ * @Last Modified time: 2017-11-01 10:10:14
+ */
 define(['jquery'], function($) {
 	function EasyDialog(ele) {
 		this.ele = ele;

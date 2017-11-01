@@ -1,8 +1,8 @@
 /*
  * @Author: chenjun
  * @Date:   2017-10-31 18:08:50
- * @Last Modified by:   0easy-23
- * @Last Modified time: 2017-10-31 18:09:35
+ * @Last Modified by:   chenjun
+ * @Last Modified time: 2017-11-01 10:09:38
  */
 
 (function($) {

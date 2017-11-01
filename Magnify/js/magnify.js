@@ -2,7 +2,7 @@
  * @Author: chenjun
  * @Date:   2017-10-31 18:39:04
  * @Last Modified by:   chenjun
- * @Last Modified time: 2017-10-31 18:39:26
+ * @Last Modified time: 2017-11-01 10:07:17
  */
 (function($) {
     var Magnify = function(ele, options) {
@@ -20,58 +20,66 @@
     }
     Magnify.prototype = {
         init: function() {
-            var _self = this.ele;
-            var isMove = false;
+            var _self = this.ele,
+                _this = this,
+                isMove = false,
+                $parent = _self.parent();
             _self.css('width', this.setting.boxWidth).addClass(this.setting.selector);
-            _self.parent().css({
+            $parent.css({
                 position: "relative",
                 width: _self.css('width'),
             });
 
             var src = _self.attr('src');
             $("<div class='area'></div><div class='bigPic'><img src=" + src + "></<div>").appendTo(_self.parent());
-            var $area = _self.parent().find(".area");
-            var $bigPic = _self.parent().find(".bigPic");
+            var $area = $parent.find(".area");
+            var $bigPic = $parent.find(".bigPic");
             $area.css({
                 width: this.setting.width,
                 height: this.setting.height,
                 borderRadius: this.setting.radius,
                 backgroundColor: this.setting.backgroundColor
             })
+
             var sw = $area.width(); //剪裁框宽度
             var sh = $area.height(); //剪裁框高度
-            var smallBox_w = _self.parent().width(); //小框的宽度
-            var smallBox_h = _self.parent().height(); //小框的高度
-            var pw = $bigPic.find('img').width(); //大图的宽度
-            var ph = $bigPic.find('img').height(); //大图的高度
-            var scale = (smallBox_w / pw).toFixed(2);
-            $bigPic.css({
-                display: 'none',
-                position: 'absolute',
-                width: parseInt(sw / scale),
-                height: parseInt(sh / scale),
-                left: '102%',
-                top: 0,
-                overflow: 'hidden',
-                borderRadius: this.setting.radius == 100 ? this.setting.radius + '%' : this.setting.radius
-            })
-            $bigPic.find('img').css({
-                position: 'absolute',
-            })
-            _self.parent().on("mouseenter", function() {
-                $area.show();
-                isMove = true
-            })
-            _self.parent().on("mousemove", function(event) {
-                if (isMove) {
-                    $bigPic.show();
-                    setPos(event, $(this), scale);
-                }
-            })
-            _self.parent().on("mouseleave", function() {
-                $bigPic.hide();
-                $area.hide();
-                isMove = false
+            var originImg = $parent.find('img')[0];
+
+            $(originImg).on('load', function() {
+                $parent.css('height', this.height);
+                var smallBox_w = $parent.width(); //小框的宽度
+                var smallBox_h = $parent.height(); //小框的高度
+                var pw = $bigPic.find('img').width(); //大图的宽度
+                var ph = $bigPic.find('img').height(); //大图的高度
+                var scale = (smallBox_w / pw).toFixed(2);
+                $bigPic.css({
+                    display: 'none',
+                    position: 'absolute',
+                    width: parseInt(sw / scale),
+                    height: parseInt(sh / scale),
+                    left: '102%',
+                    top: 0,
+                    overflow: 'hidden',
+                    borderRadius: _this.setting.radius == 100 ? _this.setting.radius + '%' : _this.setting.radius
+                })
+                $bigPic.find('img').css({
+                    position: 'absolute',
+                })
+                $parent.on("mouseenter", function() {
+                    $area.show();
+                    isMove = true
+                })
+                $parent.on("mousemove", function(event) {
+                    if (isMove) {
+                        $bigPic.show();
+                        setPos(event, $(this), scale);
+                    }
+                })
+                $parent.on("mouseleave", function() {
+                    $bigPic.hide();
+                    $area.hide();
+                    isMove = false
+                })
             })
         },
         events: function() {

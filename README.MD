@@ -4,3 +4,4 @@
 
 * [EasyDialog](https://github.com/chenjun1127/js-plugins/tree/master/EasyDialog) 轻量级jQuery弹窗插件
 * [Clock](https://github.com/chenjun1127/js-plugins/tree/master/Clock) js面向对象钟表插件
+* [Magnify](https://github.com/chenjun1127/js-plugins/tree/master/Magnify) jQuery 放大镜插件

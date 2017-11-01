@@ -2,7 +2,7 @@
  * @Author: chenjun
  * @Date:   2017-10-31 18:32:13
  * @Last Modified by:   chenjun
- * @Last Modified time: 2017-10-31 18:32:27
+ * @Last Modified time: 2017-11-01 10:23:07
  */
 
 (function(w, d) {
@@ -18,7 +18,7 @@
             boxShadow: 'inset 0 0 60px #999',
             cBgcolor: '#E91E63',
         }
-    }
+    };
     Clock.prototype = {
         init: function(o) {
             this.extend(this.options, o);
@@ -91,5 +91,5 @@
     function clock(o) {
         return new Clock(o)
     }
-    window.clock = clock
+    window.clock = clock;
 })(window, document);

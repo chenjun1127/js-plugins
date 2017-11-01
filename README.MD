@@ -8,6 +8,6 @@
 * [DropMenu](https://github.com/chenjun1127/js-plugins/tree/master/DropMenu) jQuery 下拉提示插件
 * [EasyDialog](https://github.com/chenjun1127/js-plugins/tree/master/EasyDialog) 轻量级jQuery弹窗插件
 * [Magnify](https://github.com/chenjun1127/js-plugins/tree/master/Magnify) jQuery放大镜插件
-* [ScrollerBar](https://github.com/chenjun1127/js-plugins/tree/master/ScrollerBar) jQuery滚动条插件
+* [ScrollBar](https://github.com/chenjun1127/js-plugins/tree/master/ScrollBar) jQuery滚动条插件
 * [Slider](https://github.com/chenjun1127/js-plugins/tree/master/Slider) jQuery图片轮播插件
 * [Tabs](https://github.com/chenjun1127/js-plugins/tree/master/Tabs) jQuery+css3选项卡插件

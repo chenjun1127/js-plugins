@@ -20,4 +20,5 @@ isDrag: false
 
 #### 效果预览
 [EasyDialog-Require.js](https://chenjun1127.github.io/js-plugins/EasyDialog/easyDialog-Require.js/index.html)
+<br/>
 [EasyDialog-jQuery](https://chenjun1127.github.io/js-plugins/EasyDialog/easyDialog-jQuery/index.html)

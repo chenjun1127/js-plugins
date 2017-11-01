@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/checkin.css">
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="js/checkin.js"></script>
+</head>
+
+<body>
+    <div class="checkin"></div>
+    <div class="mask">
+        <div class="modal">
+            <a href="#" class="closeBtn">&times;</a>
+            <h1 class="title_h1 clearfix"><span></span><em>已签到</em> <i>您已签到2天</i></h1>
+            <h2 class="title_h2">您获得现金<span>0.88元</span></h2>
+        </div>
+    </div>
+    <script type="text/javascript">
+	    $(function() {
+	        $(".checkin").Checkin();
+        	// 元素居中显示，与插件无关，根本自己需要修改；
+			$(".checkin").css('marginTop',parseInt(($(window).innerHeight()-$(".checkin").outerHeight())/2)+'px');
+	    })
+    </script>
+</body>
+
+</html>

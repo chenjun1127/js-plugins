@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Slider 图片无缝轮播插件</title>
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript">
+	    $(function() {
+	        $("#slider1").slider({
+	            effect: 'fade',
+	            width: 730,
+	            height: 454
+	        });
+	        $("#slider2").slider({
+	            effect: 'horizontal',
+	            width: 520,
+	            height: 280
+	        })
+	    })
+    </script>
+</head>
+
+<body>
+    <div class="banner" id="slider1">
+        <ul>
+            <li><img src="http://img11.360buyimg.com/da/jfs/t2713/143/645955026/86737/7dff7473/571ed39dN605aa5a3.jpg"></li>
+            <li><img src="http://img14.360buyimg.com/da/jfs/t2788/54/679408705/81412/1e5e8f6b/5721a54dNfab5867d.jpg"></li>
+            <li><img src="http://img14.360buyimg.com/da/jfs/t2692/351/713659931/202640/7865cea8/57230d8fN52d07009.jpg"></li>
+            <li><img src="http://img11.360buyimg.com/da/jfs/t2728/344/758560485/71072/c6d14cc1/5723247aN12a45ccb.jpg"></li>
+            <li><img src="http://img12.360buyimg.com/da/jfs/t2152/325/2957924093/282537/56fbe0da/5722ccdbN40e19525.jpg"></li>
+            <li><img src="http://img13.360buyimg.com/da/jfs/t2437/168/3003041090/89823/11bb6f2a/5722cd7eN94052a42.jpg"></li>
+        </ul>
+    </div>
+    <br>
+    <div class="banner" id="slider2">
+        <ul>
+            <li><img src="https://img.alicdn.com/tps/TB1jAo3JpXXXXX1XpXXXXXXXXXX-520-280.jpg"></li>
+            <li><img src="https://aecpm.alicdn.com/simba/img/TB1ApwGMpXXXXcoXVXXSutbFXXX.jpg"></li>
+            <li><img src="https://aecpm.alicdn.com/simba/img/TB1Y3pAJFXXXXX7XpXXSutbFXXX.jpg"></li>
+            <li><img src="https://aecpm.alicdn.com/simba/img/TB1l6xXJFXXXXc5aXXXSutbFXXX.jpg"></li>
+        </ul>
+    </div>
+</body>
+
+</html>

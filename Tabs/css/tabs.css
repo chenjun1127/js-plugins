@@ -1,0 +1,15 @@
+/*
+* @Author: chenjun
+* @Date:   2017-11-01 10:59:08
+* @Last Modified by:   chenjun
+* @Last Modified time: 2017-11-01 10:59:14
+*/
+*{padding:0; margin: 0; list-style: none;font-family: "microsoft yahei"; }
+.tab{width: 1000px;margin: 0 auto;border:1px solid #188eee;}
+.tabTitle{height: 40px;box-shadow:0px -1px 0px #188eee inset;margin: 0 10px;margin-top: 10px}
+.tabTitle span{display: block;display: inline-block;height: 40px;line-height: 40px;padding: 0 20px;background: #505050;color: #fff;float: left;margin-right: 10px;cursor: pointer;}
+.tabTitle span.active{background: #188eee;color: #FFF;}
+.tabContent{overflow: hidden;}
+.tabContent > div.tabBox{ width:100%; height: auto; }
+.inner{padding: 10px;line-height: 1.8;font-size: 14px;}
+.inner p{text-indent: 2em;}

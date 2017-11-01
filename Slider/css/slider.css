@@ -1,0 +1,15 @@
+/*
+* @Author: chenjun
+* @Date:   2017-11-01 11:21:11
+* @Last Modified by:   chenjun
+* @Last Modified time: 2017-11-01 11:21:16
+*/
+*{padding: 0; margin: 0;list-style: none;}
+.banner{margin: 0 auto;border:1px solid #d9d9d9;position: relative; overflow: hidden;}
+.bar{position: absolute;display: inline-block; bottom:20px;left: 50%;/*background: rgba(255,255,255,0.4);border-radius: 15px;padding: 2px 8px;padding-bottom: 4px;*/; z-index: 100}
+.bar i{border-radius: 50px;width: 10px;height: 10px;background: rgba(0,0,0,0.5);  display: inline-block;margin: 0 2px; cursor: pointer;box-shadow: outset -3px 2px 0 #ccc}
+.bar i.on{background: rgba(255,255,255,0.8);}
+.btn{font-family: "simsun";font-size: 40px;height: 60px;width: 40px;line-height: 60px;text-align: center;color: #fff;background: rgba(0,0,0,.6);position: absolute;top: 50%;text-decoration: none;margin-top: -30px;display: block;cursor: pointer; z-index: 100;}
+.btn:hover{background: rgba(0,0,0,.9);}
+.prev{left: 0}
+.next{right: 0}

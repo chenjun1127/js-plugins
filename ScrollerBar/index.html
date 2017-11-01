@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jQuery滚动条插件!</title>
+    <style>
+		*{padding:0;margin:0;font:14px/1.8 "microsoft yahei";-moz-user-select:none;        /**禁止选中文字*/}
+		.box{position:relative;border:1px solid #d9d9d9;margin:0 auto;margin-top:200px;overflow:hidden;}
+		.content{word-break:break-all;}
+		p{margin-bottom:10px;text-indent:2em;}
+		p+img{max-width:100%;margin:10px auto;display:block;}
+    </style>
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel-3.1.13.min.js"></script>
+    <script type="text/javascript" src="js/scrollerBar.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$(function(){
+				$('.box').scrollBar({
+					scrollDirection:"y",
+				})
+			})
+    	})
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="content">
+            <h1 style="font-size: 20px;text-align: center;padding: 10px 0">马刺主场大胜灰熊2-0 莱纳德13分邓肯3分9篮板</h1>
+            <p>
+                网易体育4月20日报道：
+                <br> 圣安东尼奥马刺队在主场扩大优势。米尔斯替补得到16分，莱纳德得到13分，他们带领球队4人得分上双，马刺队在比赛中逐渐发力拉开比分，他们在西部首轮系列赛第二战主场以94-68战胜孟菲斯灰熊队。马刺队把总比分扩大为2-0，双方的第三场将移师孟菲斯进行。
+            </p>
+            <p>
+                马刺队的米尔斯得到16分，莱纳德得到13分，阿尔德里奇得到10分、8个篮板和4次盖帽，马丁得到10分，邓肯得到3分、9个篮板和4次助攻。灰熊队的阿伦得到12分和3个篮板，兰多夫得到11分和12个篮板，巴恩斯得到9分和6个篮板。
+            </p>
+            <p>
+                支球队开赛后争夺激烈，场上比分交替增加，马丁两罚一中，首节还有2分55秒时灰熊队以11-13落后。之后的比赛被马刺队掌控，吉诺比利连投带罚得到4分，米尔斯三分中的，他们带领球队打出9-0的小高潮，马刺队以22-11领先11分结束首节。
+            </p>
+            <p>
+                阿伦独得4分，他率队在第二节打出8-2的反击波，灰熊队追至21-27。米尔斯挺身而出还击5分，莱纳德、马丁等人轮流得分，半场前3分40秒时马刺队以41-24领先17分。巴恩斯跳投命中，马丁三分命中，帕克跳投得分，马刺队在半场结束时以49-35领先14分。
+            </p>
+            <p>
+                马刺队的莱纳德上半场得到9分，米尔斯得到8分；灰熊队的阿伦得到8分，兰多夫得到7分和6个篮板。
+            </p>
+            <p>
+                第三节开始后不久阿尔德里奇两次跳投命中，吉诺比利两罚一中，马刺队以63-45领先18分。阿伦连投带罚拿下4分帮助球队追分，米尔斯再中三分，邓肯两罚一中，马刺队在三节结束时以70-53领先。
+            </p>
+            <p>
+                安德森连续罚进四球开启第四节，马刺队领先21分。灰熊队打得很顽强，兰多夫独得4分，法玛尔跳投命中，他们帮助球队缩小差距。马刺队的两位老将这时找到准星，他们为球队确立胜局。韦斯特突破扣篮，马丁投中三分，他们各得4分率队打出8-2的攻击波，第四节还有3分15秒时马刺队以88-63领先25分。大比分差距让比赛提前失去悬念，双方都尽遣替补，马刺队以94-68获胜。
+            </p>
+            <p>灰熊队首发阵容：法玛尔、卡特、巴恩斯、兰多夫、安德森</p>
+            <p>马刺队首发阵容：帕克、格林、莱纳德、阿尔德里奇、邓肯</p>
+        </div>
+    </div>
+</body>
+
+</html>

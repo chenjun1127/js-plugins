@@ -1,6 +1,6 @@
 require.config({
 	paths: {
-		jquery: 'http://apps.bdimg.com/libs/jquery/1.10.1/jquery.min'
+		jquery: 'jquery-1.10.1.min'
 	}
 })
 require(['jquery', 'easyDialog'], function($, w) {	 

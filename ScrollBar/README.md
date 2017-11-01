@@ -15,4 +15,4 @@ scrollDirection: "y",			// 滚动方向，默认为纵向
 ```
 
 #### 效果预览
-[ScrollerBar](https://chenjun1127.github.io/js-plugins/ScrollerBar/index.html)
+[ScrollBar](https://chenjun1127.github.io/js-plugins/ScrollBar/index.html)

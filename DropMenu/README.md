@@ -4,7 +4,7 @@
 #### 参数配置：
 ```javascript
 event: 'click', 		// 默认点击事件
-dialogBox: 'selector', 	// 弹出框容器
+dialogBox: 'selector', 	
 hover: false, 			// 默认滑动事件关闭
 ```
 

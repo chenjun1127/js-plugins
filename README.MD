@@ -2,7 +2,8 @@
 
 个人开发的js插件
 
-* [Checkin](https://github.com/chenjun1127/js-plugins/tree/master/Checkin) jQuery日历签到插件 浏览：[Checkin](https://chenjun1127.github.io/js-plugins/https://github.com/chenjun1127/js-plugins/blob/master/Checkin/index.html)
+* [Checkin](https://github.com/chenjun1127/js-plugins/tree/master/Checkin) jQuery日历签到插件 
+预览：[Checkin](https://chenjun1127.github.io/js-plugins/Checkin/index.html)
 * [Circle](https://github.com/chenjun1127/js-plugins/tree/master/Circle) Canvas圆环百比分进度插件
 * [Clock](https://github.com/chenjun1127/js-plugins/tree/master/Clock) 原生js实现钟表插件
 * [DropMenu](https://github.com/chenjun1127/js-plugins/tree/master/DropMenu) jQuery 下拉提示插件

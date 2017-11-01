@@ -5,11 +5,11 @@
 ```javascript
 fontColor: 'blue',				// 文字颜色
 fontSize: 40,					// 文字大小
-defaultColor: '#ccc',			// 圆环颜色
-highLightColor: '#f90',			// 圆环高亮颜色
+defaultColor: '#ccc',				// 圆环颜色
+highLightColor: '#f90',				// 圆环高亮颜色
 lineWidth: 10,					// 圆环宽度 
 percent: 80,					// 进度
-width: 300,						// 宽
+width: 300,					// 宽
 height: 300,					// 高
 ```
 

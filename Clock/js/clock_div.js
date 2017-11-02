@@ -2,16 +2,14 @@
  * @Author: chenjun
  * @Date:   2017-10-31 18:32:13
  * @Last Modified by:   chenjun
- * @Last Modified time: 2017-11-01 10:23:07
+ * @Last Modified time: 2017-11-02 10:13:29
  */
-
 (function(w, d) {
     var Clock = function() {
         this.dom = d.querySelector(arguments[0]);
         this.options = {
             bgColor: '#fff',
-            width: 300,
-            height: 300,
+            size: 300,
             hColor: '#555', // 时针颜色
             mColor: 'gold', // 分针颜色
             sColor: 'orange', // 秒针颜色
@@ -33,11 +31,11 @@
             var oS = this.dom.querySelector('.s');
             var oC = this.dom.querySelector('.c');
             //初始化时分秒
-            oH.style.cssText = 'width:' + this.options.width / 2 * (3 / 6) + 'px;background:' + this.options.hColor + ';transform:rotate(' + (-90 + oHours * 30 + oMinutes * 6 / 12) + 'deg);height:5px;position:absolute;left:' + this.options.width / 2 + 'px;top:' + this.options.height / 2 + 'px;transform-origin:0 0';
-            oM.style.cssText = 'width:' + this.options.width / 2 * (4 / 6) + 'px;background:' + this.options.mColor + ';transform:rotate(' + (-90 + oMinutes * 6) + 'deg);height:5px;position:absolute;left:' + this.options.width / 2 + 'px;top:' + this.options.height / 2 + 'px;transform-origin:0 0';
-            oS.style.cssText = 'width:' + this.options.width / 2 * (5 / 6) + 'px;background:' + this.options.sColor + ';transform:rotate(' + (-90 + oSeconds * 6) + 'deg);height:5px;position:absolute;left:' + this.options.width / 2 + 'px;top:' + this.options.height / 2 + 'px;transform-origin:0 0';
+            oH.style.cssText = 'width:' + this.options.size / 2 * (3 / 6) + 'px;background:' + this.options.hColor + ';transform:rotate(' + (-90 + oHours * 30 + oMinutes * 6 / 12) + 'deg);height:4px;position:absolute;left:' + this.options.size / 2 + 'px;top:' + this.options.size / 2 + 'px;transform-origin:0 0';
+            oM.style.cssText = 'width:' + this.options.size / 2 * (4 / 6) + 'px;background:' + this.options.mColor + ';transform:rotate(' + (-90 + oMinutes * 6) + 'deg);height:3px;position:absolute;left:' + this.options.size / 2 + 'px;top:' + this.options.size / 2 + 'px;transform-origin:0 0';
+            oS.style.cssText = 'width:' + this.options.size / 2 * (5 / 6) + 'px;background:' + this.options.sColor + ';transform:rotate(' + (-90 + oSeconds * 6) + 'deg);height:2px;position:absolute;left:' + this.options.size / 2 + 'px;top:' + this.options.size / 2 + 'px;transform-origin:0 0';
             // 中心圆点
-            oC.style.cssText = 'width:20px;height:20px;background:' + this.options.cBgcolor + ';border-radius:50%;position:absolute;left:' + (this.options.width - 20) / 2 + 'px;z-index:100;top:' + (this.options.height - 20) / 2 + 'px;'
+            oC.style.cssText = 'width:16px;height:16px;background:' + this.options.cBgcolor + ';border-radius:50%;position:absolute;left:' + (this.options.size - 16) / 2 + 'px;z-index:100;top:' + (this.options.size - 16) / 2 + 'px;'
             //运动时分秒
             var timer = setInterval(function() {
                 dateTime = new Date();
@@ -51,14 +49,14 @@
         },
         // 刻度
         clockMark: function() {
-            this.dom.style.cssText = "background:" + this.options.bgColor + ";width:" + this.options.width + "px;height:" + this.options.height + "px;" + "border-radius:50%;box-shadow:" + this.options.boxShadow;
+            this.dom.style.cssText = "background:" + this.options.bgColor + ";width:" + this.options.size + "px;height:" + this.options.size + "px;" + "border-radius:50%;box-shadow:" + this.options.boxShadow;
             var temp = document.createDocumentFragment();
             for (var i = 0; i < 60; i++) {
                 var oDiv = document.createElement('div');
                 oDiv.className = 'kedu'
-                oDiv.style.cssText = 'height:6px;width:4px;background:#555;line-height:0;font-size:0;display:block;position:absolute;left:' + this.options.width / 2 + 'px;top:0';
+                oDiv.style.cssText = 'height:6px;width:4px;background:#555;line-height:0;font-size:0;display:block;position:absolute;left:' + this.options.size / 2 + 'px;top:0';
                 oDiv.style.transform = 'rotate(' + i * 6 + 'deg)';
-                oDiv.style.transformOrigin = '0 ' + this.options.width / 2 + 'px'
+                oDiv.style.transformOrigin = '0 ' + this.options.size / 2 + 'px'
                 if (i % 5 == 0) {
                     oDiv.style.height = '15px';
                 }
@@ -75,7 +73,7 @@
             for (var i = 0; i < 4; i++) {
                 var pointDiv = document.createElement('div');
                 pointDiv.className = arrPoint[i];
-                this.dom.appendChild(pointDiv)
+                this.dom.appendChild(pointDiv);
             }
         },
         extend: function(a, b) {

@@ -13,4 +13,4 @@
 * [Slider](https://github.com/chenjun1127/js-plugins/tree/master/Slider) jQuery图片轮播插件
 * [Tabs](https://github.com/chenjun1127/js-plugins/tree/master/Tabs) jQuery+css3选项卡插件
 
-附上开发中常用的一些效果、插件，[点击这里](https://github.com/jonechen1127/some-demos);
+附上开发中常用的一些效果、插件，[点击这里](https://github.com/jonechen1127/some-demos)；
